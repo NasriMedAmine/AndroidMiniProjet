@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventFragment"
+    android:background="#E5FCFB">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5FCFB"
+        android:paddingStart="0dp"
+        tools:context=".AddEventActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutfou9"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/upsidedown_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add Event"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/layoutfou9"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/layoutfou9"
+            app:layout_constraintTop_toBottomOf="@+id/layoutfou9"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/place"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Event Location"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/ic_baseline_price_change_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Event Price"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/updatepicker"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="10dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="MM/DD/YYYY"
+            android:inputType="text|number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_background_green3"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Add Description"
+            android:inputType="textMultiLine"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/updatepicker"
+            app:layout_constraintStart_toStartOf="@+id/updatepicker"
+            app:layout_constraintTop_toBottomOf="@+id/updatepicker" />
+
+        <Button
+            android:id="@+id/btnSubmitevent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background_green4"
+            android:text="SUBMIT"
+            app:layout_constraintEnd_toStartOf="@+id/btnResetevent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+        <Button
+            android:id="@+id/btnResetevent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_background_green4"
+            android:text="RESET"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmitevent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmitevent"
+            app:layout_constraintTop_toTopOf="@+id/btnSubmitevent" />
+
+        <Button
+            android:id="@+id/ListeEventBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_green4"
+            android:text="List of Events"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnResetevent"
+            app:layout_constraintStart_toStartOf="@+id/btnSubmitevent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSubmitevent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

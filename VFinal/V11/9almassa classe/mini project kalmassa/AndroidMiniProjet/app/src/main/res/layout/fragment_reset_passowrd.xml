@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetPassowrdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/inputNewPassword3"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10sp"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputNewPassword4"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background_green2"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10sp"
+            android:ems="10"
+            android:hint="New Password "
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/inputNewPassword3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputNewPassword3"
+            app:layout_constraintTop_toBottomOf="@+id/inputNewPassword3" />
+
+        <Button
+            android:id="@+id/btnNewPassword2"
+            android:layout_width="180dp"
+            android:layout_height="51dp"
+            android:background="@drawable/button_background_green1"
+            android:text="Change"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/inputNewPassword4"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/inputNewPassword4"
+            app:layout_constraintTop_toBottomOf="@+id/inputNewPassword4"
+            app:layout_constraintVertical_bias="0.103" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

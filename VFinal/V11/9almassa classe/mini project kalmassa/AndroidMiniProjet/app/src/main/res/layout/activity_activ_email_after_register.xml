@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivEmailAfterRegisterActivity"
+    android:background="#E5FCFB">
+
+
+    <TextView
+        android:id="@+id/LoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Check your email "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="269dp"
+        android:layout_height="159dp"
+        android:background="@drawable/button_background_green3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/validEmail"
+            android:layout_width="237dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:text="Would you like to validate the email and receive a code validation?"
+            android:textAlignment="center"
+            android:textColor="#000F65"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/btnYesEmailChecker"
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Yes"
+            android:textColor="#008343"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/validEmail"
+            app:layout_constraintTop_toBottomOf="@+id/validEmail" />
+
+        <TextView
+            android:id="@+id/btnNEmailChecker"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="10dp"
+            android:text="No,Later"
+            android:textColor="#E80531"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/validEmail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnYesEmailChecker"
+            app:layout_constraintTop_toBottomOf="@+id/validEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewEmailChecker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo3a5dher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

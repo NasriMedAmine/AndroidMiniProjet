@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/nav_accueil">
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.androidminiprojet.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" />
+    <fragment
+        android:id="@+id/nav_don"
+        android:name="com.example.androidminiprojet.DonationFragment"
+        android:label="fragment_donation"
+        tools:layout="@layout/fragment_donation" />
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="com.example.androidminiprojet.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.androidminiprojet.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_accueil"
+        android:name="com.example.androidminiprojet.AccueilFragment"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.androidminiprojet.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/listeEventFragment"
+        android:name="com.example.androidminiprojet.ListeEventFragment"
+        android:label="fragment_liste_event"
+        tools:layout="@layout/fragment_liste_event" >
+        <action
+            android:id="@+id/action_listeEventFragment_self"
+            app:destination="@id/listeEventFragment" />
+        <action
+            android:id="@+id/action_listeEventFragment_to_nav_event"
+            app:destination="@id/nav_event" />
+        <action
+            android:id="@+id/action_listeEventFragment_to_updateEventFragment2"
+            app:destination="@id/updateEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeDonationFragment"
+        android:name="com.example.androidminiprojet.ListeDonationFragment"
+        android:label="fragment_liste_donation"
+        tools:layout="@layout/fragment_liste_donation" >
+        <action
+            android:id="@+id/action_listeDonationFragment_self"
+            app:destination="@id/listeDonationFragment" />
+        <action
+            android:id="@+id/action_listeDonationFragment_to_updateDonationFragment"
+            app:destination="@id/updateDonationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEventFragment"
+        android:name="com.example.androidminiprojet.UpdateEventFragment"
+        android:label="fragment_update_event"
+        tools:layout="@layout/fragment_update_event" >
+        <action
+            android:id="@+id/action_updateEventFragment_to_listeEventFragment"
+            app:destination="@id/listeEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateDonationFragment"
+        android:name="com.example.androidminiprojet.UpdateDonationFragment"
+        android:label="fragment_update_donation"
+        tools:layout="@layout/fragment_update_donation" >
+        <action
+            android:id="@+id/action_updateDonationFragment_to_listeDonationFragment"
+            app:destination="@id/listeDonationFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5FCFB "
+    tools:context=".PickImageForProfileActivity">
+
+    <TextView
+        android:id="@+id/idNextUplooadImageProfile"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="152dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#228b22"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/idIgnoreUplooadImageProfile"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:text="ignore"
+        android:textAlignment="center"
+        android:textColor="#E80531"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/idNextUplooadImageProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idNextUplooadImageProfile"
+        app:layout_constraintTop_toTopOf="@+id/idNextUplooadImageProfile" />
+
+    <ImageView
+        android:id="@+id/idImageProfile"
+        android:layout_width="216dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon"
+        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="317dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:text="did you want to upload your picture from gallery ?"
+        android:textAlignment="center"
+        android:textColor="#000F65"
+        android:textSize="17dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUploadImageProfile" />
+
+    <Button
+        android:id="@+id/btnUploadImageProfile"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_background_green1"
+        android:text="upload "
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/idImageProfile"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/idImageProfile"
+        app:layout_constraintTop_toBottomOf="@+id/idImageProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
